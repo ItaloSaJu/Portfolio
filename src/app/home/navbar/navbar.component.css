@@ -8,11 +8,7 @@
 
 .nav-de{
   width: 50%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 50px;
+
 }
 .nav-iz{
   width: 50%;

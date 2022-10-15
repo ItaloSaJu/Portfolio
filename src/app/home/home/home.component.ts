@@ -20,27 +20,20 @@ export class HomeComponent implements OnInit {
   @ViewChild('section2') section2!: ElementRef;
   @ViewChild('portfolio') portfolio!: ElementRef;
   @ViewChild('portfoli') portfoli!: ElementRef;
+  @ViewChild('menus') menus!: ElementRef;
+  @ViewChild('chiudis') chiudis!: ElementRef;
 
   constructor( private renderer : Renderer2) { }
 
-  /*@HostListener("window:scroll", ['$event'])
-  onWindowScroll( ) {
-  if(window.screenY = 100){
-    const number = document.body.scrollTop
-    if(number > 100){
 
-      console.log('hola')
-    }
-  }
-
-}*/
 @HostListener('window:scroll', ['$event'])
 onWindowScroll(e : any) {
   const portfolio = this.portfolio?.nativeElement;
   const portfoli = this.portfoli?.nativeElement;
   if(e.target['scrollingElement'].scrollTop > 500){
-    this.renderer.setStyle(portfolio, 'display' , 'none' )
+    this.renderer.setStyle(portfolio, 'bottom' , '140%' )
     this.renderer.setStyle(portfoli, 'display' , 'flex' )
+    this.renderer.setStyle(portfoli, 'right' , '-189px' )
   }
 
   // Your Code Here
@@ -53,25 +46,23 @@ onWindowScroll(e : any) {
 
   ngOnInit(): void {
 
-    //let path :any= document.querySelector('path')
-    //let pathLeng : any= path.getTotalLength()
 
-    //path.style.strokeDasharray = pathLeng + ' ' + pathLeng;
-    //path.style.strokeDasharray = pathLeng ;
-    //let img  = document.getElementById('img')as HTMLElement
+  }
 
-    //let scroll = function(){}
-    /*window.addEventListener('scroll', function () {
-      img.style.scale = 100 - + window.pageYOffset/12 + `%`;
-      img.style.left = '0px'
-      img.style.transition = '1s'
+  menu(){
+    const menus = this.menus?.nativeElement;
+    const section2 = this.section2?.nativeElement;
+    this.renderer.setStyle(menus, 'left' , '40%' )
+    this.renderer.setStyle(section2, 'transition' , '2s' )
+    this.renderer.setStyle(section2, 'display' , 'none' )
+  }
+  chiudi(){
+    console.log('hols');
+    const menus = this.menus?.nativeElement;
+    this.renderer.setStyle(menus, 'left' , '100%' )
 
-    })*/
-
-    this.renderer.listen('document', 'scroll', (e)=>{
-     // console.log(e.path.window.pageYOffset)
-    })
-
+    const section2 = this.section2?.nativeElement;
+    this.renderer.setStyle(section2, 'display' , 'flex' )
 
   }
 
@@ -101,8 +92,7 @@ onWindowScroll(e : any) {
 
 
 }
-function onWindowScroll() {
-  throw new Error('Function not implemented.');
-}
+
+
 
 
