@@ -7,10 +7,8 @@ import { FormComponent } from './home/form/form.component';
 
 
 const routes: Routes = [
-  {
-    path:"form",
-    component: FormComponent
-  }
+
+
 
 ]
 @NgModule({

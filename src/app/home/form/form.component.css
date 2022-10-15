@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(128, 128, 128, 0.116);
+  background-color: rgba(255, 253, 253, 0.116);
 }
 
 .grid-iz{
@@ -25,7 +25,6 @@ form{
   flex-direction: column;
   gap: 10px;
 
-
 }
 .name{
   width: 100%;
@@ -39,14 +38,11 @@ input{
   height: 40px;
   border-radius: 5px;
   border: none;
+  background-color: rgba(128, 128, 128, 0.106);
 }
 textarea{
   border-radius: 5px;
-
 }
-
-
-
 button{
   width: 200px;
   height: 40px;
@@ -60,25 +56,6 @@ button:hover{
   background-color: rgb(235, 183, 12);
 }
 
-.grid-de{
-  width: 30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-ul{
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-
-}
-li{
-  list-style: none;
-  font-size: 22px;
-}
 
 input:focus-visible {
   border-bottom: 3px solid black;
