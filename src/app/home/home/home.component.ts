@@ -74,7 +74,6 @@ export class HomeComponent implements OnInit {
   @ViewChild('deveimg') deveimg!: ElementRef;
   @ViewChild('devetitle') devetitle!: ElementRef;
 
-  //@ViewChild('section2') section2!: ElementRef;
   @ViewChild('portfolio') portfolio!: ElementRef;
   @ViewChild('portfoli') portfoli!: ElementRef;
   @ViewChild('content') content!: ElementRef;
@@ -114,10 +113,7 @@ onWindowScroll(e : any) {
 
   menu(){
     const menus = this.menus?.nativeElement;
-   // const section2 = this.section2?.nativeElement;
     this.renderer.setStyle(menus, 'left' , '40%' )
-   // this.renderer.setStyle(section2, 'transition' , '2s' )
-    //this.renderer.setStyle(section2, 'display' , 'none' )
 
     const formazione = this.formazione?.nativeElement;
     this.renderer.setStyle(formazione, 'left' , '-100%' )
@@ -136,8 +132,6 @@ onWindowScroll(e : any) {
     const menus = this.menus?.nativeElement;
     this.renderer.setStyle(menus, 'left' , '100%' )
 
-    //const section2 = this.section2?.nativeElement;
-   // this.renderer.setStyle(section2, 'display' , 'flex' )
 
   }
 
@@ -148,7 +142,6 @@ onWindowScroll(e : any) {
     const deveCont = this.deveCont?.nativeElement;
     const deveimg = this.deveimg?.nativeElement;
     const devetitle = this.devetitle?.nativeElement;
-    //const section2 = this.section2?.nativeElement;
     const portfolio = this.portfolio?.nativeElement;
     const portfoli = this.portfoli?.nativeElement;
     const spans = this.spans?.nativeElement;
@@ -167,8 +160,6 @@ onWindowScroll(e : any) {
     this.renderer.setStyle(deveimg, 'transition' , '1s' )
     this.renderer.setStyle(devetitle, 'left' , '190px' )
     this.renderer.setStyle(devetitle, 'transition' , '1s' )
-   // this.renderer.setStyle(section2, 'display' , 'flex' )
-   // this.renderer.setStyle(section2, 'transition' , '5s' )
 
     this.renderer.setStyle(spans, 'display' , 'block' )
     this.renderer.setStyle(portfolio, 'bottom' , '140%' )
