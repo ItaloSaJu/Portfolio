@@ -2,11 +2,7 @@
 .container{
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
-  overflow: hidden;
 
 }
 /*menu*/
@@ -41,9 +37,10 @@
   font-size: 30px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 .chiusura:hover{
-  border: 1px solid white;
+  transform: scale(1.1);
 
 }
 
@@ -81,6 +78,16 @@
 
 
 /*home*/
+
+.container-section2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  overflow: hidden;
+}
 
 .developer1{
   width: 10%;
@@ -204,6 +211,7 @@ h2 span{
   font-size: 15px;
   border: none;
   z-index: 200;
+  cursor: pointer;
 }
 
 .title{
@@ -242,47 +250,24 @@ h2{
 }
 
 
-
-/*section 2 */
-
-.section2{
-  width: 100%;
-  height: 80vh;
-  margin-top: 10%;
+.con-sect2-de{
+  width: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
-  position: absolute;
-  z-index: 1000;
 
-}
-
-.con-sect2{
-  width: 80%;
-  height: 70%;
-  display: flex;
-  gap: 20px;
-}
-
-.con-sect2-iz{
-  width: 50%;
-  height: 100%;
-}
-.con-sect2-de{
-  width: 50%;
-  height: 100%;
-}
-
-.title-sect2{
-  font-size: 60px;
 }
 
 .p-sect2{
   font-size: 20px;
   padding-top: 25px;
   line-height:28px;
+  position: relative;
+  top: 500px;
 }
+
+
 
 
 
@@ -372,14 +357,14 @@ h2{
 
 }
 span{
-  width: 1px;
-  height: 140px;
-  border: 2px solid grey;
+  width: 0px;
+  height: 115px;
+  border: 1px solid grey;
 }
 
 .prim-lav{
   width: 100%;
-  height: 180px;
+  height: 150px;
 }
 
 .tit-job{
@@ -489,7 +474,7 @@ img{
   width: 100%;
   height: 100%;
   z-index: 200;
-  background-color: rgba(5, 90, 49, 0.904);
+  background-color: #faca72;
   position: absolute;
   top: 100%;
   display: flex;
@@ -690,4 +675,409 @@ input:focus-visible {
 textarea:focus-visible {
   border-bottom: 3px solid black;
   outline-color: white;
+}
+
+
+@media screen and (max-width: 1473px) {
+  .title{
+    position: absolute;
+    left: 650px;
+
+
+  }
+
+  .title-sect3-vi{
+    display: none;
+  }
+  .tit-pro-vi{
+    display: none;
+
+  }
+  .tit-pros-vi{
+    display: none;
+  }
+  .title-h1-vi{
+    display: none;
+  }
+  .menu-ta{
+    display: none;
+  }
+  .skill-mobile{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 1326px) {
+  .title{
+    position: absolute;
+    left: 590px;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .title{
+    position: absolute;
+    left: 445px;
+  }
+  .con-sect2-de{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .menu-principal{
+    display: none;
+  }
+
+  .title{
+    position: absolute;
+    left: 315px;
+    top: 50px;
+  }
+  .developer1{
+    display: none;
+  }
+  h2 span{
+    display: none;
+  }
+  .developer2{
+    width: 50%;
+  }
+  .developer3{
+    width: 50%;
+  }
+  .developer4{
+    display: none;
+  }
+
+  .portfolio{
+    display: none;
+  }
+  .portfoli{
+    font-size: 80px;
+  }
+  .p-sect2{
+    font-size: 15px;
+    position: relative;
+    right: 35px;
+    top: 85px;
+  }
+
+
+  .container{
+    display: block;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .container-section2{
+    overflow: hidden;
+    position: relative;
+
+
+  }
+
+  .portfoli{
+    left: 100px;
+    top: -100px;
+  }
+  .img-prin{
+    width: 50%;
+  }
+  .con-sect2-de{
+    display: flex;
+  }
+
+  .section3{
+    position: relative;
+    left: 0;
+  }
+  .Progetti{
+    position: relative;
+    left: 0;
+  }
+
+  /******SECTION 3 ****/
+
+  .section3{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .spacio{
+    display: none;
+  }
+
+  .title-sect3-vi{
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .title-sect3{
+    display: none;
+  }
+
+
+  .tit-job{
+    font-size: 20px;
+  }
+
+  .sub-tit-job{
+    font-size: 13px;
+  }
+
+  .li{
+    font-size: 13px;
+  }
+
+  /******PROGETTI ****/
+
+  .Progetti{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .descr{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .tit-pro-vi{
+    display: flex;
+  }
+
+  .progetti-div{
+    display: none;
+  }
+  .tit-pro{
+    display: none;
+  }
+  .grid{
+    width: 100%;
+  }
+  .progetti-con{
+    display: block;
+  }
+
+  /******SKILL ****/
+  .skills{
+
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-vacio{
+    display: none;
+  }
+  .tit-pros-vi{
+    display: flex;
+  }
+  .tit-pros{
+    display: none;
+  }
+  .title-skill{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /******form ****/
+  .container-form{
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .form-vacio{
+    display: none;
+  }
+  .title-h1-vi{
+    display: flex;
+  }
+  .title-h1{
+    display: none;
+  }
+  .grid-iz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .div-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-ta{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(65, 63, 63);
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+  }
+  .a{
+    color:white;
+    text-decoration: none;
+  }
+  .grid-iz{
+    height: 75%;
+  }
+  .title-form{
+    height: 30%;
+  }
+
+
+}
+
+@media screen and (max-width: 425px) {
+  .container-section2{
+    display: block;
+  }
+  .developer2{
+    width: 50%;
+    height: 60%;
+    position: relative;
+  }
+  .developer3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .con-sect2-de{
+    width: 100%;
+  }
+  .p-sect2{
+    position: relative;
+    top: 20px;
+    right: 0;
+    padding: 10px 0;
+  }
+  .title{
+    left: 231px;
+    top: 84px;
+    width: 100%;
+  }
+  .img-prin{
+    width: 100%;
+  }
+  /**** Section 3 ****/
+  .section3{
+    padding-top: 50px;
+  }
+  .works{
+    width: 100%;
+    display: flex;
+  }
+  .con-sect3-iz{
+    width: 40%;
+  }
+  .con-sect3-ce{
+    display: none;
+  }
+  .con-sect3-de{
+    width: 60%;
+  }
+  .tit-job{
+    font-size: 16px;
+  }
+  .sub-tit-job{
+    font-size: 10px;
+  }
+  .prim-lav {
+    height: 200px;
+  }
+
+  /**** progetti ****/
+
+
+  .descr{
+    justify-content: start;
+  }
+
+  .grid-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /**** skills ****/
+  .skill{
+    display: none;
+  }
+  .dati{
+    width: 100%;
+    height: 15%;
+    flex-direction: column;
+  }
+  .titles{
+    display: flex;
+    width: 100%;
+    text-align: start;
+  }
+  .barra{
+    width: 100%;
+  }
+  .title-skill{
+    justify-content: flex-start;
+    height: 17%;
+  }
+  /**** conttatami ****/
+
+  .container-form{
+    padding-top: 50px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .title-form{
+    width: 100%;
+    height: 30%;
+    justify-content: flex-start;
+  }
+  .name{
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+  }
+  .grid-iz{
+    height: 95%;
+  }
+
+  /**** menu ****/
+  .menu-ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .menu-ul li{
+    text-align: center;
+    width: 20%;
+  }
 }

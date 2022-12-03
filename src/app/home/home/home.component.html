@@ -18,56 +18,66 @@
 
 
   <!-- HOME -->
-  <div class="developer1">
-    <h1 class="logo">ItaloS.</h1>
-  </div>
-  <div #developer2 class="developer2">
-    <div #deveCont class="cont-img">
-      <img class="img-prin" #deveimg src="https://stucampus.com/wp-content/uploads/2022/10/Group-2.png" alt="">
+  <div class="container-section2" id="inizio">
+    <div class="developer1">
+      <h1 class="logo">ItaloS.</h1>
+    </div>
+    <div #developer2 class="developer2">
+      <div #deveCont class="cont-img">
+        <img class="img-prin" #deveimg src="https://stucampus.com/wp-content/uploads/2022/10/Group-2.png" alt="">
+      </div>
+      <div #devetitle class="title">
+          <h1 >Italo Salas</h1>
+          <h2 (click)="change()">Frontend developer <span  #remove >--- [Click]</span></h2>
+        </div>
+
 
     </div>
-      <div #devetitle class="title">
-        <h1 >Italo Salas</h1>
-        <h2 >Frontend developer <span (click)="change()" #remove >--- [Click]</span></h2>
+    <div #developer3 class="developer3">
+      <h1 #portfolio class="portfolio">Portfolio <br>2022 -</h1>
+      <h1 #portfoli class="portfoli">Su di me</h1>
+      <div class="con-sect2-de">
+        <p #content class="p-sect2">In vita ho sempre desiderato trovare qualcosa che mi piacessi e nella programmazione ho trovato più di una passione.<br>
+          Il mio interesse va in direzione dello sviluppo web nell'area Front-end e per essere più specifico il mio scopo è quello di approfondire molto sul framework Angular.<br>
+         In questo anno ho creato il sito Stucampus, un progetto che avevo in mente, e che mi ha avvicinato al mondo dei CMS.</p>
       </div>
-
-
-  </div>
-  <div #developer3 class="developer3">
-    <h1 #portfolio class="portfolio">Portfolio <br>2022 -</h1>
-    <h1 #portfoli class="portfoli">Su di me</h1>
-  </div>
-  <div class="developer4">
-      <div class="container-menu">
-        <div class="menu" #spans  (click)="menu()">
-          <span class="span"></span>
-          <span  class="span"></span>
-          <span  class="span"></span>
+    </div>
+    <div class="developer4">
+        <div class="container-menu">
+          <div class="menu" #spans  (click)="menu()">
+            <span class="span"></span>
+            <span  class="span"></span>
+            <span  class="span"></span>
+          </div>
+        </div>
+        <div class="svg">
+          <svg fill="black" class="link" viewBox="0 0 50 50" width="40px" height="40px" ><path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 16 12 C 14.35499 12 13 13.35499 13 15 C 13 16.64501 14.35499 18 16 18 C 17.64501 18 19 16.64501 19 15 C 19 13.35499 17.64501 12 16 12 z M 16 14 C 16.564129 14 17 14.435871 17 15 C 17 15.564129 16.564129 16 16 16 C 15.435871 16 15 15.564129 15 15 C 15 14.435871 15.435871 14 16 14 z M 14 19 A 1.0001 1.0001 0 0 0 13 20 L 13 35 A 1.0001 1.0001 0 0 0 14 36 L 18 36 A 1.0001 1.0001 0 0 0 19 35 L 19 20 A 1.0001 1.0001 0 0 0 18 19 L 14 19 z M 22 19 A 1.0001 1.0001 0 0 0 21 20 L 21 35 A 1.0001 1.0001 0 0 0 22 36 L 26 36 A 1.0001 1.0001 0 0 0 27 35 L 27 27.5 C 27 26.120455 28.120455 25 29.5 25 C 30.879545 25 32 26.120455 32 27.5 L 32 30 L 32 35 A 1.0001 1.0001 0 0 0 33 36 L 37 36 A 1.0001 1.0001 0 0 0 38 35 L 38 26.5 C 38 22.36961 34.63039 19 30.5 19 C 29.213528 19 28.059744 19.41615 27 19.990234 A 1.0001 1.0001 0 0 0 26 19 L 22 19 z M 15 21 L 17 21 L 17 34 L 15 34 L 15 21 z M 23 21 L 25 21 L 25 21.816406 A 1.0001 1.0001 0 0 0 26.693359 22.537109 C 27.684186 21.585305 29.016683 21 30.5 21 C 33.54961 21 36 23.45039 36 26.5 L 36 34 L 34 34 L 34 30 L 34 27.5 C 34 25.029545 31.970455 23 29.5 23 C 27.029545 23 25 25.029545 25 27.5 L 25 34 L 23 34 L 23 21 z"/></svg>
+          <svg width="37" class=" p"  height="37" viewBox="0 0 40 40" fill="black" stroke="black" >
+            <circle class="email" cx="20" cy="20" r="19" fill="white" stroke="black" stroke-width="2"/>
+            <path d="M11.5 27C11.1 27 10.75 26.8594 10.45 26.5781C10.15 26.2969 10 25.9688 10 25.5938V13.4062C10 13.0312 10.15 12.7031 10.45 12.4219C10.75 12.1406 11.1 12 11.5 12H28.5C28.9 12 29.25 12.1406 29.55 12.4219C29.85 12.7031 30 13.0312 30 13.4062V25.5938C30 25.9688 29.85 26.2969 29.55 26.5781C29.25 26.8594 28.9 27 28.5 27H11.5ZM20 19.9219L11.5 14.6953V25.5938H28.5V14.6953L20 19.9219ZM20 18.5156L28.4 13.4062H11.625L20 18.5156ZM11.5 14.6953V13.4062V25.5938V14.6953Z" fill="black" stroke-width="0.5"/>
+            </svg>
         </div>
       </div>
-      <div class="svg">
-        <svg fill="black" class="link" viewBox="0 0 50 50" width="40px" height="40px" ><path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 16 12 C 14.35499 12 13 13.35499 13 15 C 13 16.64501 14.35499 18 16 18 C 17.64501 18 19 16.64501 19 15 C 19 13.35499 17.64501 12 16 12 z M 16 14 C 16.564129 14 17 14.435871 17 15 C 17 15.564129 16.564129 16 16 16 C 15.435871 16 15 15.564129 15 15 C 15 14.435871 15.435871 14 16 14 z M 14 19 A 1.0001 1.0001 0 0 0 13 20 L 13 35 A 1.0001 1.0001 0 0 0 14 36 L 18 36 A 1.0001 1.0001 0 0 0 19 35 L 19 20 A 1.0001 1.0001 0 0 0 18 19 L 14 19 z M 22 19 A 1.0001 1.0001 0 0 0 21 20 L 21 35 A 1.0001 1.0001 0 0 0 22 36 L 26 36 A 1.0001 1.0001 0 0 0 27 35 L 27 27.5 C 27 26.120455 28.120455 25 29.5 25 C 30.879545 25 32 26.120455 32 27.5 L 32 30 L 32 35 A 1.0001 1.0001 0 0 0 33 36 L 37 36 A 1.0001 1.0001 0 0 0 38 35 L 38 26.5 C 38 22.36961 34.63039 19 30.5 19 C 29.213528 19 28.059744 19.41615 27 19.990234 A 1.0001 1.0001 0 0 0 26 19 L 22 19 z M 15 21 L 17 21 L 17 34 L 15 34 L 15 21 z M 23 21 L 25 21 L 25 21.816406 A 1.0001 1.0001 0 0 0 26.693359 22.537109 C 27.684186 21.585305 29.016683 21 30.5 21 C 33.54961 21 36 23.45039 36 26.5 L 36 34 L 34 34 L 34 30 L 34 27.5 C 34 25.029545 31.970455 23 29.5 23 C 27.029545 23 25 25.029545 25 27.5 L 25 34 L 23 34 L 23 21 z"/></svg>
-        <svg width="37" class=" p"  height="37" viewBox="0 0 40 40" fill="black" stroke="black" >
-          <circle class="email" cx="20" cy="20" r="19" fill="white" stroke="black" stroke-width="2"/>
-          <path d="M11.5 27C11.1 27 10.75 26.8594 10.45 26.5781C10.15 26.2969 10 25.9688 10 25.5938V13.4062C10 13.0312 10.15 12.7031 10.45 12.4219C10.75 12.1406 11.1 12 11.5 12H28.5C28.9 12 29.25 12.1406 29.55 12.4219C29.85 12.7031 30 13.0312 30 13.4062V25.5938C30 25.9688 29.85 26.2969 29.55 26.5781C29.25 26.8594 28.9 27 28.5 27H11.5ZM20 19.9219L11.5 14.6953V25.5938H28.5V14.6953L20 19.9219ZM20 18.5156L28.4 13.4062H11.625L20 18.5156ZM11.5 14.6953V13.4062V25.5938V14.6953Z" fill="black" stroke-width="0.5"/>
-          </svg>
-      </div>
-
-
-
-    </div>
+  </div>
     <!-- Section 3 -->
 
-    <div class="section3" #formazione>
+    <div class="section3" #formazione >
       <div class="spacio"></div>
       <div class="con-sect3">
-        <h1 class="title-sect3">Formazione <br> ed Esperienza</h1>
+        <h1 class="title-sect3" >Formazione <br> ed Esperienza</h1>
+        <h1 class="title-sect3-vi" id="formazione">Formazione ed Esperienza</h1>
         <div class="works">
           <div class="con-sect3-iz">
             <div class="prim-lav">
               <h1 class="tit-job">FormmaTemp / Full Stack Developer</h1>
+              <h3 class="sub-tit-job">Inizio : 2022 - 10, Milano; Italia</h3>
+              <h3 class="sub-tit-job">Fine: 2022-11</h3>
+
+            </div>
+            <div class="prim-lav">
+              <h1 class="tit-job">FormmaTemp / Full Stack Developer</h1>
               <h3 class="sub-tit-job">Inizio : 2022 - 09, Milano; Italia</h3>
-              <h3 class="sub-tit-job">Fine: in corso</h3>
+              <h3 class="sub-tit-job">Fine: 2022-10</h3>
 
             </div>
             <div class="prim-lav">
@@ -76,6 +86,7 @@
               <h3 class="sub-tit-job">Fine : 2022-07</h3>
 
             </div>
+
             <div class="prim-lav">
               <h1 class="tit-job">IFTS - Full Stack Developer</h1>
               <h1 class="sub-tit-job">Inizio : 2021 - 11, Milano; Italia</h1>
@@ -94,6 +105,10 @@
           <div class="co">
             <div class="cos"></div>
           </div>
+          <span ></span>
+          <div class="co">
+            <div class="cos"></div>
+          </div>
         </div>
 
         <div class="con-sect3-de">
@@ -101,10 +116,18 @@
             <ul>
               <li class="li"> Il corso della durata di 250 ore</li>
               <li class="li">Linguaggi di programmazione front-end e
-                backend: <br>
-                Javascript, Typescript, Angular, Java,
-                MySql</li>
-            </ul>
+                backend, più centrato sul backend: <br>
+                java (JSE, JEE, Sping boot, API Rest), Angular</li>
+              </ul>
+            </div>
+            <div class="prim-lav">
+              <ul>
+                <li class="li"> Il corso della durata di 250 ore</li>
+                <li class="li">Linguaggi di programmazione front-end e
+                  backend, più centrato sul frontend: <br>
+                  Javascript, Typescript, Angular, Java,
+                  MySql</li>
+              </ul>
           </div>
           <div class="prim-lav">
             <ul>
@@ -133,11 +156,12 @@
 
 
     <!-- Progetti -->
-    <div class="Progetti" #prog>
+    <div class="Progetti" #prog >
       <div class="progetti-div"></div>
       <div class="progetti-con">
         <div class="descr">
           <h1 class="tit-pro">Progetti</h1>
+          <h1 class="tit-pro-vi" id="progetti">Progetti</h1>
         </div>
         <div class="grid">
           <div class="grid-container">
@@ -168,11 +192,12 @@
       </div>
 
       <!-- SKILL -->
-      <div class="skills" #skills>
+      <div class="skills" #skills >
         <div class="div-vacio"></div>
         <div class="div-content">
           <div class="title-skill">
             <h1 class="tit-pros">Skills</h1>
+            <h1 class="tit-pros-vi" id="skills">Skills</h1>
           </div>
           <div class="skill">
                 <div class="dati" *ngFor="let item of arralyList">
@@ -189,15 +214,28 @@
                 </div>
 
           </div>
+          <!--mobile-->
+          <div class="skill-mobile">
+                <div class="dati" *ngFor="let item of arralyList">
+                  <div class="titles">
+                    <h2>{{item.name}} : {{item.nivel}}</h2>
+                  </div>
+                  <div class="barra">
+                    <progress value="{{item.number}}" max="100" ></progress>
+                  </div>
+                </div>
+
+          </div>
         </div>
       </div>
 
       <!-- Form -->
-      <div class="container-form" #forms>
+      <div class="container-form" #forms >
         <div class="form-vacio"></div>
         <div class="grid-iz">
           <div class="title-form">
             <h1 class="title-h1">Contattami</h1>
+            <h1 class="title-h1-vi" id="cont">Contattami</h1>
           </div>
           <div class="div-form">
             <form action="">
@@ -219,16 +257,16 @@
           </div>
         </div>
 
+
       </div>
-      <!-- Section 2 -->
-      <div #section2 class="section2">
-        <div class="con-sect2">
-          <div class="con-sect2-iz">
-          </div>
-          <div class="con-sect2-de">
-            <p class="p-sect2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo deleniti nihil temporibus maiores! Fuga, autem ipsam aliquid excepturi porro magnam sequi dolores quasi dolorum quibusdam eum, qui aut. Ducimus aut ea repellendus molestias pariatur praesentium, aliquam vero quam. Commodi voluptates officiis accusantium laboriosam excepturi voluptas aliquam tempora qui, nulla magni quam debitis. Iure ducimus libero amet. Magnam maxime eum praesentium, assumenda tempora, debitis itaque voluptatum consequatur ad illo .</p>
-          </div>
-        </div>
+      <div class="menu-ta">
+        <ul class="menu-ul">
+          <li><a href="#inizio" class="a">Inizio</a> </li>
+          <li><a href="#formazione" class="a">Formazione ed esperienza</a></li>
+          <li><a href="#progetti" class="a">Progetti</a></li>
+          <li><a href="#skills" class="a">Skills</a></li>
+          <li><a href="#cont" class="a">Contattami</a></li>
+        </ul>
       </div>
 
 

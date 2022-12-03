@@ -1,7 +1,6 @@
-import { style } from '@angular/animations';
-import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, HostListener, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { Scroll } from '@angular/router';
+
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -11,6 +10,11 @@ import { Scroll } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   arralyList : any = [
+    {
+      name : 'Wordpress',
+      number : 80,
+      nivel : 'Azanzado'
+    },
     {
       name : 'HTML',
       number : 80,
@@ -22,9 +26,9 @@ export class HomeComponent implements OnInit {
       nivel : 'Azanzado'
     },
     {
-      name : 'Wordpress',
-      number : 80,
-      nivel : 'Azanzado'
+      name : 'JavaScript',
+      number : 60,
+      nivel : 'Intermedio'
     },
     {
       name : 'Angular',
@@ -48,8 +52,13 @@ export class HomeComponent implements OnInit {
     },
     {
       name : 'Java',
-      number : 10,
-      nivel : 'Basso'
+      number : 50,
+      nivel : 'Intermedio'
+    },
+    {
+      name : 'MySQL',
+      number : 50,
+      nivel : 'Intermedio'
     },
     {
       name : 'Figma',
@@ -65,9 +74,10 @@ export class HomeComponent implements OnInit {
   @ViewChild('deveimg') deveimg!: ElementRef;
   @ViewChild('devetitle') devetitle!: ElementRef;
 
-  @ViewChild('section2') section2!: ElementRef;
+  //@ViewChild('section2') section2!: ElementRef;
   @ViewChild('portfolio') portfolio!: ElementRef;
   @ViewChild('portfoli') portfoli!: ElementRef;
+  @ViewChild('content') content!: ElementRef;
   @ViewChild('menus') menus!: ElementRef;
   @ViewChild('chiudis') chiudis!: ElementRef;
   @ViewChild('formazione') formazione!: ElementRef;
@@ -104,10 +114,10 @@ onWindowScroll(e : any) {
 
   menu(){
     const menus = this.menus?.nativeElement;
-    const section2 = this.section2?.nativeElement;
+   // const section2 = this.section2?.nativeElement;
     this.renderer.setStyle(menus, 'left' , '40%' )
-    this.renderer.setStyle(section2, 'transition' , '2s' )
-    this.renderer.setStyle(section2, 'display' , 'none' )
+   // this.renderer.setStyle(section2, 'transition' , '2s' )
+    //this.renderer.setStyle(section2, 'display' , 'none' )
 
     const formazione = this.formazione?.nativeElement;
     this.renderer.setStyle(formazione, 'left' , '-100%' )
@@ -126,22 +136,25 @@ onWindowScroll(e : any) {
     const menus = this.menus?.nativeElement;
     this.renderer.setStyle(menus, 'left' , '100%' )
 
-    const section2 = this.section2?.nativeElement;
-    this.renderer.setStyle(section2, 'display' , 'flex' )
+    //const section2 = this.section2?.nativeElement;
+   // this.renderer.setStyle(section2, 'display' , 'flex' )
 
   }
 
   change(){
+    const content = this.content?.nativeElement;
     const developer2 = this.developer2?.nativeElement;
     const developer3 = this.developer3?.nativeElement;
     const deveCont = this.deveCont?.nativeElement;
     const deveimg = this.deveimg?.nativeElement;
     const devetitle = this.devetitle?.nativeElement;
-    const section2 = this.section2?.nativeElement;
+    //const section2 = this.section2?.nativeElement;
     const portfolio = this.portfolio?.nativeElement;
     const portfoli = this.portfoli?.nativeElement;
     const spans = this.spans?.nativeElement;
     const remove = this.remove?.nativeElement;
+    this.renderer.setStyle(content, 'top' , '0px' )
+    this.renderer.setStyle(content, 'transition' , '1s' )
     this.renderer.setStyle(developer2, 'width' , '30%' )
     this.renderer.setStyle(developer2, 'transition' , '1s' )
     this.renderer.setStyle(deveCont, 'height' , '70%' )
@@ -154,10 +167,10 @@ onWindowScroll(e : any) {
     this.renderer.setStyle(deveimg, 'transition' , '1s' )
     this.renderer.setStyle(devetitle, 'left' , '190px' )
     this.renderer.setStyle(devetitle, 'transition' , '1s' )
-    this.renderer.setStyle(section2, 'display' , 'flex' )
-    this.renderer.setStyle(section2, 'transition' , '5s' )
+   // this.renderer.setStyle(section2, 'display' , 'flex' )
+   // this.renderer.setStyle(section2, 'transition' , '5s' )
 
-    this.renderer.setStyle(spans, 'display' , 'flex' )
+    this.renderer.setStyle(spans, 'display' , 'block' )
     this.renderer.setStyle(portfolio, 'bottom' , '140%' )
     this.renderer.setStyle(portfoli, 'display' , 'flex' )
     this.renderer.setStyle(portfoli, 'right' , '-189px' )
