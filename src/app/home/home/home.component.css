@@ -178,17 +178,20 @@
   justify-content: flex-end;
 }
 
+
 .link:hover{
   fill: blue;
+  cursor: pointer;
   transform: scale(1.1);
 }
-.email:hover{
-  stroke: red;
-}
-.p:hover{
-  stroke: red;
+
+.github:hover {
+  stroke: #5505b7d3;
+  cursor: pointer;
   transform: scale(1.1);
 }
+
+
 
 
 .menu{
@@ -229,8 +232,8 @@ h2 span{
 
 }
 .img-prin{
-  width: 33%;
-  height:100%;
+  width: 31%;
+  height:108%;
   position: absolute;
   bottom: 0;
   background-color: transparent;
@@ -759,7 +762,7 @@ textarea:focus-visible {
 
   /*formazione*/
   .works{
-    height: 96%;
+    height: 90%;
   }
 
 
@@ -1270,7 +1273,7 @@ textarea:focus-visible {
     display: block;
   }
   .developer2{
-    width: 70%;
+    width: 60%;
     height: 50%;
     position: relative;
   }
@@ -1291,7 +1294,7 @@ textarea:focus-visible {
     padding: 0 20px ;
   }
   .title{
-    left: 218px;
+    left: 205px;
     top: 110px;
     width: 100%;
     line-height: 34px;
@@ -1445,7 +1448,7 @@ textarea:focus-visible {
 @media screen and (max-width: 375px) {
 
   .title{
-    left: 204px;
+    left: 183px;
     top: 93px;
   }
   .title h1{
