@@ -161,7 +161,7 @@ onWindowScroll(e : any) {
     this.renderer.setStyle(devetitle, 'left' , '190px' )
     this.renderer.setStyle(devetitle, 'transition' , '1s' )
 
-    this.renderer.setStyle(spans, 'display' , 'block' )
+    this.renderer.setStyle(spans, 'display' , 'flex' )
     this.renderer.setStyle(portfolio, 'bottom' , '140%' )
     this.renderer.setStyle(portfoli, 'display' , 'flex' )
     this.renderer.setStyle(portfoli, 'right' , '-189px' )

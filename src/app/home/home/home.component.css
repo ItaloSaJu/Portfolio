@@ -260,7 +260,7 @@ h2{
 }
 
 .p-sect2{
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 25px;
   line-height:28px;
   position: relative;
@@ -313,7 +313,7 @@ h2{
 }
 .works{
   width: 90%;
-  height: 80%;
+  height: 90%;
   display: flex;
 
 }
@@ -358,13 +358,13 @@ h2{
 }
 span{
   width: 0px;
-  height: 115px;
+  height: 105px;
   border: 1px solid grey;
 }
 
 .prim-lav{
   width: 100%;
-  height: 150px;
+  height: 140px;
 }
 
 .tit-job{
@@ -677,14 +677,54 @@ textarea:focus-visible {
   outline-color: white;
 }
 
-
-@media screen and (max-width: 1473px) {
+@media screen and (max-width: 2560px){
+  /*home
   .title{
-    position: absolute;
-    left: 650px;
-
+    top: 150px;
+    left: 1156px;
+    line-height: 63px;
+  }
+  .title h1{
+    font-size: 65px;
+  }
+  .title h2{
+    font-size: 33px;
+  }
+  .title h2 span{
+    font-size: 30px;
+  }
+  .logo{
+    font-size: 40px;
 
   }
+
+  .p-sect2{
+    top: 700px;
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .portfolio {
+    font-size: 181px;
+    font-weight: 900;
+    right: -210px;
+    bottom: 267px;
+    line-height: 155px;
+  }
+  .portfoli {
+    font-size: 181px;
+    right: -700px;
+    bottom: 342px;
+    line-height: 155px;
+  }
+
+  menu
+
+  .item-ul{
+    gap: 100px;
+  }
+  .item-menu{
+    font-size: 90px;
+  }*/
 
   .title-sect3-vi{
     display: none;
@@ -705,36 +745,306 @@ textarea:focus-visible {
   .skill-mobile{
     display: none;
   }
-
-}
-@media screen and (max-width: 1326px) {
-  .title{
-    position: absolute;
-    left: 590px;
-  }
-
-}
-
-
-@media screen and (max-width: 1024px) {
-  .title{
-    position: absolute;
-    left: 445px;
-  }
-  .con-sect2-de{
+  .img-vi{
     display: none;
   }
 
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1440px) {
+  .title{
+    position: absolute;
+    left: 650px;
+  }
+
+  /*formazione*/
+  .works{
+    height: 96%;
+  }
+
+
+
+}
+@media screen and (max-width: 1080px) {
+
+
   .menu-principal{
     display: none;
   }
 
   .title{
     position: absolute;
-    left: 315px;
-    top: 50px;
+    left: 370px;
+    top: 70px;
+  }
+  .title h1{
+    font-size: 40px;
+  }
+  .title h2{
+    font-size: 20px;
+  }
+  .developer1{
+    display: none;
+  }
+  h2 span{
+    display: none;
+  }
+  .developer2{
+    width: 55%;
+  }
+  .developer3{
+    width: 45%;
+  }
+  .developer4{
+    display: none;
+  }
+
+  .portfolio{
+    display: none;
+  }
+  .portfoli{
+    font-size: 100px;
+    left: 100px;
+    top: 300px;
+  }
+  .p-sect2{
+    font-size: 13px;
+    position: relative;
+    right: 35px;
+    top: 85px;
+  }
+
+
+  .container{
+    display: block;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .container-section2{
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+
+
+  }
+
+  .cont-img{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .img-prin{
+    height: 80%;
+    width: 100%;
+  }
+  .con-sect2-de{
+    display: flex;
+    width: 87%;
+  }
+
+  .section3{
+    position: relative;
+    left: 0;
+  }
+  .Progetti{
+    position: relative;
+    left: 0;
+  }
+
+  /******SECTION 3 ****/
+
+  .section3{
+    height: 85vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .spacio{
+    display: none;
+  }
+
+  .title-sect3-vi{
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .title-sect3{
+    display: none;
+  }
+  .con-sect3{
+    width: 100%;
+  }
+
+
+  .tit-job{
+    font-size: 20px;
+  }
+
+  .sub-tit-job{
+    font-size: 13px;
+  }
+
+  .li{
+    font-size: 13px;
+  }
+
+  /******PROGETTI ****/
+
+  .Progetti{
+    height: auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-vi{
+    display: flex;
+  }
+  .img-invi{
+    display: none;
+
+  }
+  .descr{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .tit-pro-vi{
+    display: flex;
+  }
+
+  .progetti-div{
+    display: none;
+  }
+  .tit-pro{
+    display: none;
+  }
+  .grid{
+    width: 100%;
+  }
+  .grid-container{
+    grid-template-columns: 1fr ;
+  }
+  .progetti-con{
+    display: block;
+    width: 100%;
+  }
+
+  /******SKILL ****/
+  .skills{
+
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+  }
+  .div-vacio{
+    display: none;
+  }
+  .div-content{
+    width: 100%;
+  }
+  .tit-pros-vi{
+    display: flex;
+  }
+  .tit-pros{
+    display: none;
+  }
+  .skill{
+    height: 70%;
+  }
+  .title-skill{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+  }
+
+  /******form ****/
+  .container-form{
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 100px;
+    height: 70%;
+  }
+  .form-vacio{
+    display: none;
+  }
+  .title-h1-vi{
+    display: flex;
+  }
+  .title-h1{
+    display: none;
+  }
+  .grid-iz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+  .div-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  form{
+    width: 90%;
+    height: 100%;
+  }
+
+  .menu-ta{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(65, 63, 63);
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+  }
+  .a{
+    color:white;
+    text-decoration: none;
+  }
+  .grid-iz{
+    height: 65%;
+  }
+  .title-form{
+    height: 10%;
+  }
+
+
+}
+@media screen and (max-width: 768px) {
+
+
+  .menu-principal{
+    display: none;
+  }
+
+  .title{
+    position: absolute;
+    left: 415px;
+    top: 100px;
   }
   .developer1{
     display: none;
@@ -772,6 +1082,7 @@ textarea:focus-visible {
     overflow: scroll;
   }
   .container-section2{
+    height: 80vh;
     overflow: hidden;
     position: relative;
 
@@ -783,7 +1094,8 @@ textarea:focus-visible {
     top: -100px;
   }
   .img-prin{
-    width: 50%;
+    width: 100%;
+    height: 100%;
   }
   .con-sect2-de{
     display: flex;
@@ -952,19 +1264,19 @@ textarea:focus-visible {
 
 
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .container-section2{
+    height: 100vh;
     display: block;
   }
   .developer2{
-    width: 50%;
-    height: 60%;
+    width: 70%;
+    height: 50%;
     position: relative;
   }
   .developer3{
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -976,15 +1288,26 @@ textarea:focus-visible {
     position: relative;
     top: 20px;
     right: 0;
-    padding: 10px 0;
+    padding: 0 20px ;
   }
   .title{
-    left: 231px;
-    top: 84px;
+    left: 218px;
+    top: 110px;
     width: 100%;
+    line-height: 34px;
+  }
+  .title h1{
+    font-size: 40px;
+  }
+  .title h2{
+    font-size: 20px;
   }
   .img-prin{
     width: 100%;
+  }
+  .portfoli{
+    top: -304px;
+    left: 160px;
   }
   /**** Section 3 ****/
   .section3{
@@ -999,6 +1322,9 @@ textarea:focus-visible {
   }
   .con-sect3-ce{
     display: none;
+  }
+  .con-sect3{
+    width: 90%;
   }
   .con-sect3-de{
     width: 60%;
@@ -1019,25 +1345,49 @@ textarea:focus-visible {
   .descr{
     justify-content: start;
   }
+  .progetti-con{
+    width: 90%;
+  }
 
   .grid-container{
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+
+  h1{
+    font-size: 27px;
+  }
+  p{
+    font-size: 17px;
+  }
   /**** skills ****/
+
+  .skills{
+    height: 100%;
+  }
   .skill{
     display: none;
   }
+  .skill-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 25px;
+  }
+  .div-content{
+    width: 90%;
+  }
   .dati{
     width: 100%;
-    height: 15%;
+    height: 10%;
     flex-direction: column;
   }
   .titles{
     display: flex;
     width: 100%;
     text-align: start;
+    font-size: 15px;
   }
   .barra{
     width: 100%;
@@ -1049,14 +1399,19 @@ textarea:focus-visible {
   /**** conttatami ****/
 
   .container-form{
+    height: 100vh;
     padding-top: 50px;
     align-items: flex-start;
     margin-bottom: 50px;
   }
   .title-form{
     width: 100%;
-    height: 30%;
+    height: 15%;
     justify-content: flex-start;
+  }
+  .div-form{
+    height: 80%;
+    align-items: flex-start;
   }
   .name{
     flex-direction: column;
@@ -1065,7 +1420,13 @@ textarea:focus-visible {
     width: 100%;
   }
   .grid-iz{
+    width: 90%;
     height: 95%;
+    gap: 0;
+  }
+  input, textarea{
+    padding-left: 10px;
+    border: 1px solid grey;
   }
 
   /**** menu ****/
@@ -1080,4 +1441,35 @@ textarea:focus-visible {
     text-align: center;
     width: 20%;
   }
+}
+@media screen and (max-width: 375px) {
+
+  .title{
+    left: 204px;
+    top: 93px;
+  }
+  .title h1{
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .title h2{
+    font-size: 15px;
+  }
+  .p-sect2{
+    top: 37px;
+    font-size: 13px;
+  }
+  .portfoli{
+    left: 60px;
+  }
+
+  /*formazione*/
+  .prim-lav{
+    height: 249px;
+  }
+  /*skils*/
+  .titles h2{
+    font-size: 15px;
+  }
+
 }
