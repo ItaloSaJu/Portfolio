@@ -1,6 +1,10 @@
 
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { FormazioneComponent } from 'src/app/formazione/formazione.component';
+import { ProgettiComponent } from 'src/app/progetti/progetti.component';
+import { SkillsComponent } from 'src/app/skills/skills.component';
+import { FormComponent } from 'src/app/form/form.component';
 
 
 @Component({
@@ -8,7 +12,13 @@ import { NgFor } from '@angular/common';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
     standalone: true,
-    imports: [NgFor]
+    imports: [
+      NgFor,
+      FormazioneComponent,
+      ProgettiComponent,
+      SkillsComponent,
+      FormComponent
+    ]
 })
 export class HomeComponent implements OnInit {
 
@@ -161,7 +171,7 @@ onWindowScroll(e : any) {
     this.renderer.setStyle(deveimg, 'transition' , '1s' )
     this.renderer.setStyle(deveimg, 'height' , '71%' )
     this.renderer.setStyle(deveimg, 'transition' , '1s' )
-    this.renderer.setStyle(devetitle, 'left' , '190px' )
+    this.renderer.setStyle(devetitle, 'left' , '15%' )
     this.renderer.setStyle(devetitle, 'transition' , '1s' )
 
     this.renderer.setStyle(spans, 'display' , 'flex' )

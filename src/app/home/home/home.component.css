@@ -149,7 +149,7 @@
   color: rgba(128, 128, 128, 0.153);
   position: absolute;
   transition: 0.7s;
-  right: -460px;
+  right: -100%;
   bottom: 240px;
   line-height: 75px;
 
@@ -224,7 +224,7 @@ h2 span{
   font-weight: 900;
   position: absolute;
   top: 90px;
-  left: 570px;
+  left: 45%;
   letter-spacing: -3px;
   line-height: 45px;
   z-index: 1000;
@@ -267,7 +267,7 @@ h2{
   padding-top: 25px;
   line-height:28px;
   position: relative;
-  top: 500px;
+  bottom: -100%;
 }
 
 
@@ -289,99 +289,7 @@ h2{
   overflow: hidden;
   transition: 1s;
 }
-.spacio{
-  width: 10%;
-}
 
-.con-sect3{
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-direction: column;
-}
-.title-sect3{
-  font-size: 150px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 50px;
-  position: absolute;
-  color: rgba(253, 249, 249, 0.902);
-  text-shadow: rgba(79, 79, 79, 0.098) 0px 5px 15px,
-  rgba(38, 37, 37, 0.048) 0px 5px 15px;
-  z-index: -10;
-
-}
-.works{
-  width: 90%;
-  height: 90%;
-  display: flex;
-
-}
-.con-sect3-iz{
-  width: 45%;
-  height: 100%;
-  padding-top: 10px;
-}
-.con-sect3-ce{
-  width: 10%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-
-
-}
-.con-sect3-de{
-  width: 45%;
-  height: 100%;
-  padding-top: 10px;
-}
-
-.co{
-  width: 40px;
-  height: 40px;
-  border-radius:50% ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid grey;
-
-}
-.cos{
-  width: 30px;
-  height: 30px;
-  border-radius:50% ;
-  border: 5px solid white;
-  background-color: rgb(235, 183, 12);
-
-}
-span{
-  width: 0px;
-  height: 105px;
-  border: 1px solid grey;
-}
-
-.prim-lav{
-  width: 100%;
-  height: 140px;
-}
-
-.tit-job{
-  font-size: 22px;
-}
-
-.sub-tit-job{
-  font-size: 15px;
-  color: grey;
-}
-.li{
-  font-size: 15px;
-  line-height:28px;
-}
 
 /*PROGETTI*/
 
@@ -397,106 +305,7 @@ span{
 
 }
 
-.progetti-div{
-  width: 10%;
-}
-.progetti-con{
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.descr{
-  width: 15%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tit-pro{
-  font-size: 110px;
-  font-weight: 800;
-  text-align: center;
-  color: rgba(253, 249, 249, 0.937);
-  text-shadow: rgba(79, 79, 79, 0.135) 0px 5px 15px,
-  rgba(38, 37, 37, 0.117) 0px 5px 15px;
-  transform: rotate(-90deg);
-}
-
-
-.grid{
-  width: 85%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.grid-container{
-  width: 90%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
-}
-.description1, .description2, .description3{
-  border: 1px solid grey;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.description1:hover .trans{
-  top: 0%;
-  transition: 0.5s;
-}
-.description2:hover .trans{
-  top: 0;
-  transition: 0.5s;
-}
-.description3:hover .trans{
-  top: 0;
-  transition: 0.5s;
-}
-
-.description1{
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-img{
-  width: 100%;
-  height: 100%;
-}
-
-.trans{
-  width: 100%;
-  height: 100%;
-  z-index: 200;
-  background-color: #faca72;
-  position: absolute;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  color: white;
-
-}
-
-h1{
-  font-size: 40px;
-
-}
-p{
-  font-size: 25px;
-  text-align: center;
-}
 
 
 /** SKILL*/
@@ -512,71 +321,7 @@ p{
   transition: 1s;
 
 }
-.div-vacio{
-  width: 10%;
-}
-.div-content{
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.title-skill{
-  width: 100%;
-  height: 20%;
-}
 
-.tit-pros{
-  font-size: 110px;
-  font-weight: 800;
-  text-align: center;
-  color: rgba(253, 249, 249, 0.937);
-  text-shadow: rgba(79, 79, 79, 0.135) 0px 5px 15px,
-  rgba(38, 37, 37, 0.117) 0px 5px 15px;
-}
-
-.skill{
-  width: 100%;
-  height: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2%;
-}
-
-
-.dati{
-  width: 80%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-progress{
-  width: 100%;
-  height: 25px;
-}
-
-.titles{
-  width: 20%;
-  text-align: start;
-}
-.barra{
-  width: 60%;
-}
-.nivel{
-  text-align: center;
-  width: 20%;
-}
-
-progress[value]::-webkit-progress-value {
-    background-color: rgb(235, 183, 12);
-
-    border-radius: 2px;
-    background-size: 35px 20px, 100% 100%, 100% 100%;
-}
 
 /*FORM*/
 
@@ -590,95 +335,7 @@ progress[value]::-webkit-progress-value {
   background-color:  rgb(252, 248, 248);
   transition: 1s;
 }
-.form-vacio{
-  width: 10%;
-}
 
-.grid-iz{
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:  rgb(252, 248, 248);
-}
-
-.title-form{
-  width: 30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.title-h1{
-  font-size: 110px;
-  font-weight: 800;
-  color: rgba(253, 249, 249, 0.937);
-  text-shadow: rgba(79, 79, 79, 0.135) 0px 5px 15px,
-  rgba(38, 37, 37, 0.117) 0px 5px 15px;
-  transform: rotate(-90deg);
-}
-
-.div-form{
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-form{
-  width: 80%;
-  height: 80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-
-}
-.name{
-  width: 100%;
-  height: auto;
-  display: flex;
-  gap: 10px;
-}
-
-input{
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.819);
-}
-textarea{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.819);
-}
-button{
-  width: 200px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: white;
-  border: none;
-  background-color: rgba(128, 128, 128, 0.106);
-
-
-}
-button:hover{
-  border: none;
-  background-color: #faca72;
-  color:black
-}
-
-
-input:focus-visible {
-  border-bottom: 3px solid black;
-  outline-color: white;
-}
-textarea:focus-visible {
-  border-bottom: 3px solid black;
-  outline-color: white;
-}
 
 @media screen and (max-width: 2560px){
   /*home
