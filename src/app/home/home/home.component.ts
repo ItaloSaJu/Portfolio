@@ -118,8 +118,7 @@ onWindowScroll(e : any) {
 
 
   ngOnInit(): void {
-
-
+this.change()
   }
 
 
@@ -149,6 +148,7 @@ onWindowScroll(e : any) {
   }
 
   change(){
+
     const content = this.content?.nativeElement;
     const developer2 = this.developer2?.nativeElement;
     const developer3 = this.developer3?.nativeElement;

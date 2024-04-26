@@ -1,85 +1,62 @@
 
-  .spacio{
-    width: 10%;
+
+  .container{
+    width: 85vw;
+    height: 85vh;
+
   }
-  
-  .con-sect3{
-    width: 90%;
-    height: 100%;
+
+  .button-filter-container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    flex-direction: column;
+    min-width: 250px;
+    padding: 10px 20px;
+    height: auto;
   }
-  .title-sect3{
-    font-size: 150px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 50px;
-    position: absolute;
-    color: rgba(253, 249, 249, 0.902);
-    text-shadow: rgba(79, 79, 79, 0.098) 0px 5px 15px,
-    rgba(38, 37, 37, 0.048) 0px 5px 15px;
-    z-index: -10;
-  
-  }
-  .works{
-    width: 90%;
-    height: 90%;
-    display: flex;
-  
-  }
-  .con-sect3-iz{
-    width: 45%;
-    height: 100%;
-    padding-top: 10px;
-  }
-  .con-sect3-ce{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-  
-  
-  }
-  .con-sect3-de{
-    width: 45%;
-    height: 100%;
-    padding-top: 10px;
-  }
-  
-  .co{
-    width: 40px;
-    height: 40px;
-    border-radius:50% ;
+  .button-filter{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid grey;
-  
+    gap: 20px;
+    min-width: 250px;
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
   }
-  .cos{
-    width: 30px;
-    height: 30px;
-    border-radius:50% ;
-    border: 5px solid white;
-    background-color: rgb(235, 183, 12);
-  
-  }
-  span{
-    width: 0px;
-    height: 105px;
-    border: 1px solid grey;
-  }
-  
-  .prim-lav{
+
+
+  .sperienza{
     width: 100%;
-    height: 140px;
+    display: flex;
+    gap: 25px;
+    padding-top: 50px;
+    justify-content: center;
+  }
+  .container-cards{
+    width: 90%;
+    min-height: 250px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr   ;
+    row-gap: 23px;
   }
   
+
+  .item-card{
+    width: 97%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 30px;
+    gap: 20px;
+  }
+  .item-card:hover{
+    border: 2px solid #F47A04;
+  }
+
   .tit-job{
     font-size: 22px;
   }
@@ -88,7 +65,34 @@
     font-size: 15px;
     color: grey;
   }
+
+  .description-esperienza ul{
+    margin-top: 8px;
+  }
   .li{
+    margin: 6px 0;
     font-size: 15px;
     line-height:28px;
+  } 
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .container-tecnologia{
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-tecnologie{
+    min-width: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: transparent;
   }
