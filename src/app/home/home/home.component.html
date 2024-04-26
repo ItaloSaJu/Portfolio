@@ -9,7 +9,6 @@
         <ul class="item-ul">
           <li  class="item-menu"(click)="forma()"  >Formazione  ed Esperienza</li>
           <li class="item-menu" (click)="pro()" >Progetti</li>
-          <li class="item-menu" (click)="skil()">Skills</li>
           <li  class="item-menu" (click)="form()">Contattami</li>
         </ul>
       </div>
@@ -34,7 +33,7 @@
 
     </div>
     <div #developer3 class="developer3">
-      <h1 #portfolio class="portfolio">Portfolio <br>2022</h1>
+      <h1 #portfolio class="portfolio">Portfolio <br>{{year}}</h1>
       <h1 #portfoli  class="portfoli">Su di me</h1>
       <div class="con-sect2-de">
         <p #content class="p-sect2">Appassionato del mondo tecnologico e dell'apprendimento autonomo. Il mio obiettivo a lungo termine è
@@ -74,11 +73,11 @@
     <div class="Progetti" #prog >
       <app-progetti></app-progetti>
       </div>
-
-      <!-- SKILL -->
+<!-- 
+      
       <div class="skills" #skills >
         <app-skills></app-skills>
-      </div>
+      </div> -->
 
       <!-- Form -->
       <div class="container-form" #forms >

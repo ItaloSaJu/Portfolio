@@ -22,63 +22,8 @@ import { FormComponent } from 'src/app/form/form.component';
 })
 export class HomeComponent implements OnInit {
 
-  arralyList : any = [
-    {
-      name : 'Wordpress',
-      number : 80,
-      nivel : 'Azanzado'
-    },
-    {
-      name : 'HTML',
-      number : 80,
-      nivel : 'Azanzado'
-    },
-    {
-      name : 'CSS',
-      number : 80,
-      nivel : 'Azanzado'
-    },
-    {
-      name : 'JavaScript',
-      number : 60,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'Angular',
-      number : 60,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'Typescript',
-      number : 60,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'React',
-      number : 20,
-      nivel : 'Basso'
-    },
-    {
-      name : 'Bootstrap',
-      number : 50,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'Java',
-      number : 50,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'MySQL',
-      number : 50,
-      nivel : 'Intermedio'
-    },
-    {
-      name : 'Figma',
-      number : 70,
-      nivel : 'Intermedio'
-    }
-  ]
+  year?:number
+  
 
   @ViewChild('aspan') span!: ElementRef;
   @ViewChild('developer2') developer2!: ElementRef;
@@ -99,7 +44,9 @@ export class HomeComponent implements OnInit {
   @ViewChild('spans') spans!: ElementRef;
   @ViewChild('remove') remove!: ElementRef;
 
-  constructor( private renderer : Renderer2) { }
+  constructor( private renderer : Renderer2) { 
+    this.year = new Date().getFullYear();
+  }
 
 
 /*@HostListener('window:scroll', ['$event'])
@@ -193,14 +140,6 @@ this.change()
   pro(){
     const prog = this.prog?.nativeElement;
     this.renderer.setStyle(prog, 'left' , '-10%' )
-    const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '100%' )
-
-  }
-
-  skil(){
-    const skills = this.skills?.nativeElement;
-    this.renderer.setStyle(skills, 'left' , '-10%' )
     const menus = this.menus?.nativeElement;
     this.renderer.setStyle(menus, 'left' , '100%' )
 
