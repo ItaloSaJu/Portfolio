@@ -1,4 +1,4 @@
-.progetti-div{
+/* .progetti-div{
     width: 10%;
   }
   .progetti-con{
@@ -97,4 +97,94 @@
   p{
     font-size: 25px;
     text-align: center;
-  }
+  } */
+  
+
+.container{
+  width: 85vw;
+    height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container-cards{
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+  width: 95%;
+  height: auto;
+  padding: 25px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.card:hover{
+  border: 2px solid #F47A04;
+}
+h1{
+  font-size: 37px;
+  font-weight: 700;
+}
+.image, .container-button{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+img{
+  width: 100%;
+}
+
+.container-tecnologia{
+  display: flex;
+  gap: 10px;
+}
+
+.button-tecnologie{
+  min-width: auto;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button-site{
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button-site a{
+  font-style: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.button-site:hover{
+  border: 1px solid #F47A04;
+
+}

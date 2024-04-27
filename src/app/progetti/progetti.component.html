@@ -1,34 +1,28 @@
-<div class="progetti-div"></div>
-      <div class="progetti-con">
-        <div class="descr">
-          <h1 class="tit-pro">Progetti</h1>
-          <h1 class="tit-pro-vi" id="progetti">Progetti</h1>
+<div class="container">
+  <div class="container-title">
+    <h1 class="tit-pro">Progetti</h1>
+  </div>
+  <div class="container-content">
+    <div class="container-cards">
+      <div class="card" *ngFor="let item of progetti">
+        <h1 class="title">{{item.title}}</h1>
+        <div class="image">
+          <img class="img-vi" src="{{item.image}}" alt="">
         </div>
-        <div class="grid">
-          <div class="grid-container">
-            <div class="description1">
-                <img  class="img-invi" src="https://stucampus.com/wp-content/uploads/2022/10/Group-6fsaf.jpg" alt="">
-                <img class="img-vi" src="https://stucampus.com/wp-content/uploads/2022/12/stucampus.png" alt="">
-
-                <div class="trans">
-                  <h1>Stucampus</h1>
-                  <p>Proggetto realizzato con Wordpress, html, css</p>
-                </div>
-              </div>
-              <div class="description3">
-                <img src="https://stucampus.com/wp-content/uploads/2022/10/Immagine.png" alt="">
-                <div class="trans">
-                  <h1>Portfolio</h1>
-                  <p>Proggetto realizzato con Html, CSS, Javascript, Angular</p>
-                </div>
-              </div>
-              <div class="description2">
-                <img src="https://stucampus.com/wp-content/uploads/2022/10/todo-list.png" alt="">
-                <div class="trans">
-                  <h1>Todo-list</h1>
-                  <p>Proggetto in corso: Html, CSS, Javascript, Angular</p>
-                </div>
-              </div>
+        <div class="content">
+          <div class="description">{{item.description}}</div>
+          <div class="container-button">
+            <div class="container-tecnologia" >
+              <button class="button-tecnologie" *ngFor="let items of item.tecnologie"> 
+                {{items.tecnologia}}
+              </button>
+            </div>
           </div>
+          <ng-container *ngIf="item.site !== undefined">
+            <button class="button-site"><a href="{{item.site}}" >Visualizza Sito</a></button>
+          </ng-container>
         </div>
       </div>
+    </div>
+  </div>
+</div>
