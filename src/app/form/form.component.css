@@ -1,89 +1,79 @@
-.form-vacio{
-    width: 10%;
-  }
-  
-  .grid-iz{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:  rgb(252, 248, 248);
-  }
-  
-  .title-form{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  .title-h1{
-    font-size: 110px;
-    font-weight: 800;
-    color: rgba(253, 249, 249, 0.937);
-    text-shadow: rgba(79, 79, 79, 0.135) 0px 5px 15px,
-    rgba(38, 37, 37, 0.117) 0px 5px 15px;
-    transform: rotate(-90deg);
-  }
-  
-  .div-form{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  form{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  
-  }
-  .name{
-    width: 100%;
-    height: auto;
-    display: flex;
-    gap: 10px;
-  }
-  
-  input{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.819);
-  }
-  textarea{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.819);
-  }
-  button{
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: white;
-    border: none;
-    background-color: rgba(128, 128, 128, 0.106);
-  
-  
-  }
-  button:hover{
-    border: none;
-    background-color: #faca72;
-    color:black
-  }
-  
-  
-  input:focus-visible {
-    border-bottom: 3px solid black;
-    outline-color: white;
-  }
-  textarea:focus-visible {
-    border-bottom: 3px solid black;
-    outline-color: white;
-  }
+.container {
+  width: 85vw;
+  height: 85vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title-form {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.div-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.name {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc9c9;
+  background-color: rgba(255, 255, 255, 0.819);
+  padding-left: 10px;
+}
+textarea {
+  border: 1px solid #ccc9c9;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.819);
+}
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  border: 1px solid #ccc9c9;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #faca72;
+  color: #faca72;
+  font-weight: 700;
+}
+
+input:focus-visible , textarea:focus-visible{
+  border: 1px solid black;
+  outline-color: black;
+}

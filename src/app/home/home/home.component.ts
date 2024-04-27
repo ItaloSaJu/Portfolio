@@ -1,29 +1,31 @@
-
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { NgFor } from '@angular/common';
 import { FormazioneComponent } from 'src/app/formazione/formazione.component';
 import { ProgettiComponent } from 'src/app/progetti/progetti.component';
-import { SkillsComponent } from 'src/app/skills/skills.component';
+// import { SkillsComponent } from 'src/app/skills/skills.component';
 import { FormComponent } from 'src/app/form/form.component';
 
-
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css'],
-    standalone: true,
-    imports: [
-      NgFor,
-      FormazioneComponent,
-      ProgettiComponent,
-      SkillsComponent,
-      FormComponent
-    ]
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports: [
+    NgFor,
+    FormazioneComponent,
+    ProgettiComponent,
+    // SkillsComponent,
+    FormComponent,
+  ],
 })
 export class HomeComponent implements OnInit {
-
-  year?:number
-  
+  year?: number;
 
   @ViewChild('aspan') span!: ElementRef;
   @ViewChild('developer2') developer2!: ElementRef;
@@ -39,17 +41,16 @@ export class HomeComponent implements OnInit {
   @ViewChild('chiudis') chiudis!: ElementRef;
   @ViewChild('formazione') formazione!: ElementRef;
   @ViewChild('prog') prog!: ElementRef;
-  @ViewChild('skills') skills!: ElementRef;
+  // @ViewChild('skills') skills!: ElementRef;
   @ViewChild('forms') forms!: ElementRef;
   @ViewChild('spans') spans!: ElementRef;
   @ViewChild('remove') remove!: ElementRef;
 
-  constructor( private renderer : Renderer2) { 
+  constructor(private renderer: Renderer2) {
     this.year = new Date().getFullYear();
   }
 
-
-/*@HostListener('window:scroll', ['$event'])
+  /*@HostListener('window:scroll', ['$event'])
 onWindowScroll(e : any) {
   const portfolio = this.portfolio?.nativeElement;
   const portfoli = this.portfoli?.nativeElement;
@@ -63,39 +64,33 @@ onWindowScroll(e : any) {
 
 }*/
 
-
   ngOnInit(): void {
-this.change()
+    this.change();
   }
 
-
-
-  menu(){
+  menu() {
     const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '40%' )
+    this.renderer.setStyle(menus, 'left', '40%');
 
     const formazione = this.formazione?.nativeElement;
-    this.renderer.setStyle(formazione, 'left' , '-100%' )
+    this.renderer.setStyle(formazione, 'left', '-100%');
 
     const prog = this.prog?.nativeElement;
-    this.renderer.setStyle(prog, 'left' , '-100%' )
+    this.renderer.setStyle(prog, 'left', '-100%');
 
-    const skills = this.skills?.nativeElement;
-    this.renderer.setStyle(skills, 'left' , '-100%' )
+    // const skills = this.skills?.nativeElement;
+    // this.renderer.setStyle(skills, 'left' , '-100%' )
 
     const forms = this.forms?.nativeElement;
-    this.renderer.setStyle(forms, 'left' , '-100%' )
+    this.renderer.setStyle(forms, 'left', '-100%');
   }
-  chiudi(){
-    console.log('hols');
+
+  chiudi() {
     const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '100%' )
-
-
+    this.renderer.setStyle(menus, 'left', '100%');
   }
 
-  change(){
-
+  change() {
     const content = this.content?.nativeElement;
     const developer2 = this.developer2?.nativeElement;
     const developer3 = this.developer3?.nativeElement;
@@ -106,55 +101,46 @@ this.change()
     const portfoli = this.portfoli?.nativeElement;
     const spans = this.spans?.nativeElement;
     const remove = this.remove?.nativeElement;
-    this.renderer.setStyle(content, 'top' , '0px' )
-    this.renderer.setStyle(content, 'transition' , '1s' )
-    this.renderer.setStyle(developer2, 'width' , '30%' )
-    this.renderer.setStyle(developer2, 'transition' , '1s' )
-    this.renderer.setStyle(deveCont, 'height' , '70%' )
-    this.renderer.setStyle(deveCont, 'transition' , '1s' )
-    this.renderer.setStyle(developer3, 'width' , '50%' )
-    this.renderer.setStyle(developer3, 'transition' , '1s' )
-    this.renderer.setStyle(deveimg, 'width' , '21%' )
-    this.renderer.setStyle(deveimg, 'transition' , '1s' )
-    this.renderer.setStyle(deveimg, 'height' , '71%' )
-    this.renderer.setStyle(deveimg, 'transition' , '1s' )
-    this.renderer.setStyle(devetitle, 'left' , '15%' )
-    this.renderer.setStyle(devetitle, 'transition' , '1s' )
+    this.renderer.setStyle(content, 'top', '0px');
+    this.renderer.setStyle(content, 'transition', '1s');
+    this.renderer.setStyle(developer2, 'width', '30%');
+    this.renderer.setStyle(developer2, 'transition', '1s');
+    this.renderer.setStyle(deveCont, 'height', '70%');
+    this.renderer.setStyle(deveCont, 'transition', '1s');
+    this.renderer.setStyle(developer3, 'width', '50%');
+    this.renderer.setStyle(developer3, 'transition', '1s');
+    this.renderer.setStyle(deveimg, 'width', '21%');
+    this.renderer.setStyle(deveimg, 'transition', '1s');
+    this.renderer.setStyle(deveimg, 'height', '71%');
+    this.renderer.setStyle(deveimg, 'transition', '1s');
+    this.renderer.setStyle(devetitle, 'left', '15%');
+    this.renderer.setStyle(devetitle, 'transition', '1s');
 
-    this.renderer.setStyle(spans, 'display' , 'flex' )
-    this.renderer.setStyle(portfolio, 'bottom' , '140%' )
-    this.renderer.setStyle(portfoli, 'display' , 'flex' )
-    this.renderer.setStyle(portfoli, 'right' , '-189px' )
-    this.renderer.setStyle(remove, 'display' , 'none' )
-
-
+    this.renderer.setStyle(spans, 'display', 'flex');
+    this.renderer.setStyle(portfolio, 'bottom', '140%');
+    this.renderer.setStyle(portfoli, 'display', 'flex');
+    this.renderer.setStyle(portfoli, 'right', '-189px');
+    this.renderer.setStyle(remove, 'display', 'none');
   }
-  forma(){
-    console.log('hol')
+  forma() {
+    console.log('hol');
     const formazione = this.formazione?.nativeElement;
-    this.renderer.setStyle(formazione, 'left' , '-10%' )
+    this.renderer.setStyle(formazione, 'left', '-10%');
     const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '100%' )
+    this.renderer.setStyle(menus, 'left', '100%');
   }
 
-  pro(){
+  pro() {
     const prog = this.prog?.nativeElement;
-    this.renderer.setStyle(prog, 'left' , '-10%' )
+    this.renderer.setStyle(prog, 'left', '-10%');
     const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '100%' )
-
+    this.renderer.setStyle(menus, 'left', '100%');
   }
 
-  form(){
+  form() {
     const forms = this.forms?.nativeElement;
-    this.renderer.setStyle(forms, 'left' , '-10%' )
+    this.renderer.setStyle(forms, 'left', '-10%');
     const menus = this.menus?.nativeElement;
-    this.renderer.setStyle(menus, 'left' , '100%' )
-
+    this.renderer.setStyle(menus, 'left', '100%');
   }
-
 }
-
-
-
-
