@@ -73,7 +73,36 @@ button:hover {
   font-weight: 700;
 }
 
-input:focus-visible , textarea:focus-visible{
+input:focus-visible,
+textarea:focus-visible {
   border: 1px solid black;
   outline-color: black;
+}
+
+@media screen and (max-width: 425px) {
+
+  .container{
+    height: auto;
+  }
+
+  .title-form[_ngcontent-ng-c1673851250] {
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .div-form {
+    align-items: start;
+  }
+  form {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .name {
+    flex-wrap: wrap;
+  }
 }

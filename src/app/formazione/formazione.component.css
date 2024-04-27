@@ -1,99 +1,132 @@
+.container {
+  width: 85vw;
+  height: 85vh;
+}
+.container-title{
 
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 37px;
+  font-weight: 700;
+}
 
-  .container{
-    width: 85vw;
-    height: 85vh;
+.button-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-width: 250px;
+  padding: 10px 20px;
+  height: auto;
+}
+.button-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-width: 250px;
+  padding: 10px 20px;
+  height: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  }
+.sperienza {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  padding-top: 50px;
+  justify-content: center;
+}
+.container-cards {
+  width: 90%;
+  min-height: 250px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 23px;
+}
 
-  .button-filter-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    min-width: 250px;
-    padding: 10px 20px;
+.item-card {
+  width: 97%;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  padding: 20px 30px;
+  gap: 20px;
+}
+.item-card:hover {
+  border: 2px solid #f47a04;
+}
+
+.tit-job {
+  font-size: 22px;
+}
+
+.sub-tit-job {
+  font-size: 15px;
+  color: grey;
+}
+
+.description-esperienza ul {
+  margin-top: 8px;
+}
+.li {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+.container-tecnologia {
+  display: flex;
+  gap: 10px;
+}
+
+.button-tecnologie {
+  min-width: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
     height: auto;
   }
-  .button-filter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    min-width: 250px;
-    padding: 10px 20px;
-    height: auto;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
+  .title {
+    font-size: 25px;
   }
-
-
-  .sperienza{
+  .button-filter {
+    min-width: 100px;
+  }
+  .container-cards {
     width: 100%;
     display: flex;
-    gap: 25px;
-    padding-top: 50px;
-    justify-content: center;
-  }
-  .container-cards{
-    width: 90%;
-    min-height: 250px;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr   ;
-    row-gap: 23px;
-  }
-  
-
-  .item-card{
-    width: 97%;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    padding: 20px 30px;
-    gap: 20px;
-  }
-  .item-card:hover{
-    border: 2px solid #F47A04;
-  }
-
-  .tit-job{
-    font-size: 22px;
-  }
-  
-  .sub-tit-job{
-    font-size: 15px;
-    color: grey;
-  }
-
-  .description-esperienza ul{
-    margin-top: 8px;
-  }
-  .li{
-    margin: 6px 0;
-    font-size: 15px;
-    line-height:28px;
-  } 
-
-  img{
-    width: 70px;
-    height: 70px;
-  }
-
-  .container-tecnologia{
-    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
-
-  .button-tecnologie{
-    min-width: auto;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    background-color: transparent;
+  .item-card {
+    flex-direction: column;
+    padding: 20px 20px;
   }
+
+  .container-tecnologia {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  li{
+    font-size: 15px;
+  }
+}

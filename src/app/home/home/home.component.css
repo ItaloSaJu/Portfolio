@@ -557,7 +557,6 @@ h2{
 
   .Progetti{
     height: auto;
-    padding-bottom: 100px;
     display: flex;
     justify-content: center;
   }
@@ -930,7 +929,7 @@ h2{
 
 
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 425px) {
   .container-section2{
     height: 100vh;
     display: block;
@@ -949,6 +948,7 @@ h2{
   }
   .con-sect2-de{
     width: 100%;
+    margin-top: 50px;
   }
   .p-sect2{
     position: relative;
@@ -978,32 +978,12 @@ h2{
   /**** Section 3 ****/
   .section3{
     padding-top: 50px;
-  }
-  .works{
-    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
   }
-  .con-sect3-iz{
-    width: 40%;
-  }
-  .con-sect3-ce{
-    display: none;
-  }
-  .con-sect3{
-    width: 90%;
-  }
-  .con-sect3-de{
-    width: 60%;
-  }
-  .tit-job{
-    font-size: 16px;
-  }
-  .sub-tit-job{
-    font-size: 10px;
-  }
-  .prim-lav {
-    height: 200px;
-  }
+  
 
   /**** progetti ****/
 
@@ -1027,48 +1007,14 @@ h2{
   p{
     font-size: 17px;
   }
-  /**** skills ****/
-
-  /* .skills{
-    height: 100%;
-  }
-  .skill{
-    display: none;
-  }
-  .skill-mobile{
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    padding-top: 25px;
-  }
-  .div-content{
-    width: 90%;
-  }
-  .dati{
-    width: 100%;
-    height: 10%;
-    flex-direction: column;
-  }
-  .titles{
-    display: flex;
-    width: 100%;
-    text-align: start;
-    font-size: 15px;
-  }
-  .barra{
-    width: 100%;
-  }
-  .title-skill{
-    justify-content: flex-start;
-    height: 17%;
-  } */
+ 
   /**** conttatami ****/
 
   .container-form{
-    height: 100vh;
+    height: auto;
     padding-top: 50px;
     align-items: flex-start;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .title-form{
     width: 100%;
@@ -1093,6 +1039,9 @@ h2{
   input, textarea{
     padding-left: 10px;
     border: 1px solid grey;
+  }
+  .Progetti{
+    padding-bottom: 20px;
   }
 
   /**** menu ****/
