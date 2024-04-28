@@ -78,18 +78,76 @@ textarea:focus-visible {
   border: 1px solid black;
   outline-color: black;
 }
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 27px;
+    padding-left: 0px;
+  }
+  .title-form{
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: start;
+    margin-bottom: 15px;
+}
 
+.container {
+  width: 90vw;
+  height: auto;
+}
+.container-cards {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 25px;
+}
+.sperienza{
+  justify-content: center;
+}
+form{
+  width: 95%;
+}
+.container-content {
+  
+  padding-top: 0px;
+}
+  }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 27px;
+  }
+  .title-form{
+    margin-bottom: 15px;
+    padding-left: 20px;
+
+  }
+  .container {
+    width: 100vw;
+    height: auto;
+  }
+  .container-content{
+    padding-top: 0;
+  }
+  .container-cards {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    padding: 0 20px ;
+  }
+  form{
+    width: 88%;
+  }
+}
 @media screen and (max-width: 425px) {
 
   .container{
     height: auto;
+    width: 90vw;
   }
 
-  .title-form[_ngcontent-ng-c1673851250] {
+  .title-form {
     width: 100%;
     height: auto;
     justify-content: start;
     margin-bottom: 50px;
+    padding-left: 0px;
   }
   .title {
     font-size: 25px;
@@ -98,7 +156,7 @@ textarea:focus-visible {
     align-items: start;
   }
   form {
-    width: 100%;
+    width: 100vw;
     height: auto;
     justify-content: flex-start;
   }
@@ -106,3 +164,4 @@ textarea:focus-visible {
     flex-wrap: wrap;
   }
 }
+

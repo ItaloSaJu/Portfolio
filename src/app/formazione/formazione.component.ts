@@ -160,9 +160,6 @@ export class FormazioneComponent implements OnInit {
 
   ngOnInit(): void {
     this.esperienza();
-    this.newArrayEsperienzaFormazione.map(c => console.log(c.description.description3)
-    );
-    
   }
 
   esperienza() {

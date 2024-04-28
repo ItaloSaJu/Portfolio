@@ -440,7 +440,7 @@ h2{
 
   .title{
     position: absolute;
-    left: 370px;
+    left: 48%;
     top: 70px;
   }
   .title h1{
@@ -500,8 +500,8 @@ h2{
     position: relative;
   }
   .img-prin{
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    width: 70%;
   }
   .con-sect2-de{
     display: flex;
@@ -520,38 +520,12 @@ h2{
   /******SECTION 3 ****/
 
   .section3{
-    height: 85vh;
+    height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  .spacio{
-    display: none;
-  }
-
-  .title-sect3-vi{
-    display: flex;
-    padding-bottom: 50px;
-  }
-  .title-sect3{
-    display: none;
-  }
-  .con-sect3{
-    width: 100%;
-  }
-
-
-  .tit-job{
-    font-size: 20px;
-  }
-
-  .sub-tit-job{
-    font-size: 13px;
-  }
-
-  .li{
-    font-size: 13px;
-  }
+  
 
   /******PROGETTI ****/
 
@@ -592,39 +566,6 @@ h2{
     display: block;
     width: 100%;
   }
-
-  /******SKILL ****/
-  /* .skills{
-
-    position: relative;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75%;
-  }
-  .div-vacio{
-    display: none;
-  }
-  .div-content{
-    width: 100%;
-  }
-  .tit-pros-vi{
-    display: flex;
-  }
-  .tit-pros{
-    display: none;
-  }
-  .skill{
-    height: 70%;
-  }
-  .title-skill{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-  } */
 
   /******form ****/
   .container-form{
@@ -812,8 +753,7 @@ h2{
 
   .Progetti{
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
   }
@@ -837,31 +777,6 @@ h2{
   .progetti-con{
     display: block;
   }
-
-  /******SKILL ****/
-  /* .skills{
-
-    position: relative;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .div-vacio{
-    display: none;
-  }
-  .tit-pros-vi{
-    display: flex;
-  }
-  .tit-pros{
-    display: none;
-  }
-  .title-skill{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
   /******form ****/
   .container-form{
@@ -981,7 +896,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0;
+    padding-bottom: 70px;
   }
   
 
