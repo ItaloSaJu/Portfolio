@@ -1,6 +1,7 @@
 import {
   Component,
   ElementRef,
+  HostListener,
   OnInit,
   Renderer2,
   ViewChild,
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('forms') forms!: ElementRef;
   @ViewChild('spans') spans!: ElementRef;
   @ViewChild('remove') remove!: ElementRef;
+  @ViewChild('menuMobileHide') menuMobileHide!: ElementRef;
 
   constructor(private renderer: Renderer2) {
     this.year = new Date().getFullYear();
@@ -142,5 +144,12 @@ onWindowScroll(e : any) {
     this.renderer.setStyle(forms, 'left', '-10%');
     const menus = this.menus?.nativeElement;
     this.renderer.setStyle(menus, 'left', '100%');
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    const menuMobileHide = this.menuMobileHide.nativeElement;
+    window.innerWidth > 1080 ? this.renderer.setStyle(menuMobileHide, 'display', 'none') : this.renderer.setStyle(menuMobileHide, 'display', 'flex')
+    
   }
 }
